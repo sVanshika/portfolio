@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+/* font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif; */
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+h5, h6, p, li{
+  font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4{
+  font-family: 'Poppins', sans-serif;
+}
+p, li{
+  font-size: 1.1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.navbar{
+  background-color: white;
+  padding: 100px 15vw;
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.navbar-brand{
+  color: black;
+  font-size: 30px;
+}
+.nav-item{
+  padding: 0 20px;
+}
+.nav-item a{
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ABOUT */
+.about{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 30vh;
+  background-image: url(./images/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutContainer{
+  /* box-shadow: 0 0 8px 1px #eee; */
+  max-width: 40vw;
 }
 
-.App-link {
-  color: #61dafb;
+.myImage{
+  width: 220px;
+  height: 244px;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+.left{
+  text-align: center;
+  background-color: #F4ECE6;
+}
+.left h5{
+  margin-top:1vh;
+  margin-bottom: 2vh;
+  color: #3E649F;
+}
+.links{
+  background-color: white;
+  width: 100%;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.right h1{
+  font-size: 80px;
+  padding-top: 2vh;
+}
+.right h2{
+  font-size: 40px;
+}
+.right p{
+  padding-top: 2vh;
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* education */
+.education{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.educationBlock{
+  margin-bottom: 2rem; 
+  border-bottom: 2px solid #eee;
+}
+
+.educationBlock h6{
+  color: #3E649F;
+  font-weight: bold;
+}
+
+.educationBlock h5{
+  font-family: 'Poppins', sans-serif;
+}
+
+.educationBlock p{
+  color: #666;
+}
+
+/* PROJECT */
+.project{
+  margin: 2rem 0;
+  box-shadow: 0 2px 16px 4px #eee;
+}
+
+.projectImage{
+  padding: 0;
+}
+.projectData{
+  padding: 2rem;
+  /* width: 322px; */
+}
+.projectData h3{
+  color: #3E649F;
+  border-right: 6px solid #3E649F;
+  margin: 2rem 0;
+}
+.projectData p{
+  text-align: justify;
+ 
+}
+.projectData li{
+  display: inline;
+  padding: 1rem 0;
+}
+.projectImage img{
+  object-fit: cover;
+  width:100%;
+  height: 100%;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.githubIcon, .linkIcon{
+  margin:1rem 0;
+  color: black;
+  font-size: 1.5rem;
+}
+.githubIcon{
+  margin-right: 0.5rem;
+}
+.linkIcon:hover, .githubIcon:hover{
+  color: #3E649F;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body{
+    padding: 0 1rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .educationBlock h5{ font-size:1rem;}
+  /* .projectData{padding: 0 2rem 0 2rem;} */
 }
