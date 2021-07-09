@@ -20,7 +20,7 @@ p, li{
 /* Header */
 .navbar{
   background-color: white;
-  padding: 100px 15vw;
+  padding: 2rem 15vw;
 }
 .navbar-collapse{
   justify-content: flex-end;
